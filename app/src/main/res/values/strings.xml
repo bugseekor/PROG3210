@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+
+    <string-array name="lengthUnits">
+        <item>inch</item>
+        <item>meter</item>
+        <item>centimeter</item>
+    </string-array>
+
+    <string-array name="tempUnits">
+        <item>celsius</item>
+        <item>fahrenheit</item>
+    </string-array>
+
+    <string name="title_activity_length">lengthActivity</string>
+    <string name="title_activity_temp">tempActivity</string>
+</resources>

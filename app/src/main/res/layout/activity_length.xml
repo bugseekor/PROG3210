@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="ca.on.conestogac.assignment1.lengthActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="ca.on.conestogac.assignment1.lengthActivity">
+
+        <TextView
+            android:id="@+id/titleLable"
+            android:layout_width="210dp"
+            android:layout_height="39dp"
+            android:text="Length Converter"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/unit1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit 1"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/unit1Spinner"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/lengthUnits"/>
+
+        <EditText
+            android:id="@+id/length1EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <ImageButton
+            android:id="@+id/tDAButton"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:scaleType="fitStart"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <Button
+            android:id="@+id/rSButton"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/bUAButton"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:scaleType="fitEnd"
+            app:srcCompat="@android:drawable/arrow_up_float" />
+
+        <TextView
+            android:id="@+id/unit2Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit 2"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/unit2Spinner"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/lengthUnits"/>
+
+        <EditText
+            android:id="@+id/length2EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:id="@+id/msgTextView"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:textSize="24sp" />
+
+    </TableLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
