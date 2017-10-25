@@ -15,5 +15,16 @@
         android:id="@+id/temperButton"
         android:onClick="onClick"
         android:text="Temperature Converter" />
-
+    <Button
+        android:id="@+id/InputACarButton"
+        android:onClick="onClick"
+        android:text="Input a Car" />
+    <Button
+        android:id="@+id/listButton"
+        android:onClick="onClick"
+        android:text="List View" />
+    <Button
+        android:id="@+id/deletAllButton"
+        android:onClick="onClick"
+        android:text="Delete All" />
 </TableLayout>

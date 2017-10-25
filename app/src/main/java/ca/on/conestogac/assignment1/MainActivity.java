@@ -29,7 +29,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.temperButton:
                 sendMessage2(view);
                 break;
-
+            case R.id.InputACarButton:
+                sendMessage3(view);
+                break;
+            case R.id.listButton:
+                sendMessage4(view);
+                break;
+            case R.id.deletAllButton:
+                sendMessage5(view);
+                break;
         }
     }
 
@@ -39,6 +47,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     public void sendMessage2(View view){
         Intent intent = new Intent(this, tempActivity.class);
+        startActivity(intent);
+    }
+    public void sendMessage3(View view) {
+        Intent intent = new Intent(this, InputACar.class);
+        startActivity(intent);
+    }
+    public void sendMessage4(View view) {
+        Intent intent = new Intent(this, ListActivity.class);
+        startActivity(intent);
+    }
+    public void sendMessage5(View view) {
+        Intent intent = new Intent(this, DeleteAllActivity.class);
         startActivity(intent);
     }
 }

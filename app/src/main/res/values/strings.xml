@@ -14,4 +14,12 @@
 
     <string name="title_activity_length">lengthActivity</string>
     <string name="title_activity_temp">tempActivity</string>
+    <string name="title_activity_list">ListActivity</string>
+
+    <string name="title_activity_input_acar">InputACar</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_delete_all">DeleteAllActivity</string>
+
 </resources>

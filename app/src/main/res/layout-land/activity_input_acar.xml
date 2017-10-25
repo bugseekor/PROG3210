@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="ca.on.conestogac.assignment1.InputACar">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="ca.on.conestogac.assignment1.lengthActivity">
+
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Input a new Car"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/filler"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TableRow>
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Car Name"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/yearLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Year"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/engineLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Engine"
+                android:textSize="16sp" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/yearEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/engineEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text" />
+        </TableRow>
+        <TextView
+            android:id="@+id/helpLabel"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="-- Input only one of three types --"
+            android:textSize="16sp" />
+        <TableRow>
+            <TextView
+                android:id="@+id/kmplLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="km/l"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/lphkmLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="l/100km"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/mpgLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="mpg"
+                android:textSize="16sp" />
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/kmplEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:id="@+id/lphkmEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+            <EditText
+                android:id="@+id/mpgEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+        </TableRow>
+        <Button
+            android:id="@+id/inputButton"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:text="INPUT"
+            android:onClick="onClick"/>
+        <TextView
+            android:id="@+id/msgTextView"
+            android:layout_width="210dp"
+            android:layout_height="39dp"
+            android:textSize="24sp" />
+
+    </TableLayout>
+
+</FrameLayout>

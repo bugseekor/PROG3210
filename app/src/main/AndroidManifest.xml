@@ -18,14 +18,29 @@
         </activity>
         <activity
             android:name=".lengthActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="keyboardHidden|screenSize"
             android:label="@string/title_activity_length"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".tempActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="keyboardHidden|screenSize"
             android:label="@string/title_activity_temp"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ListActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/title_activity_list"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".InputACar"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/title_activity_input_acar"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DeleteAllActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/title_activity_delete_all"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

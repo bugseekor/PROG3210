@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="ca.on.conestogac.assignment1.DeleteAllActivity">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context="ca.on.conestogac.assignment1.ListActivity">
+            <TextView
+                android:id="@+id/dummy1TextView"
+                android:layout_width="210dp"
+                android:layout_height="39dp"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DELETE ALL"
+                android:onClick="onClick"/>
+            <TextView
+                android:id="@+id/dummy2TextView"
+                android:layout_width="210dp"
+                android:layout_height="39dp"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/msgTextView"
+                android:layout_width="210dp"
+                android:layout_height="39dp"
+                android:textSize="24sp" />
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>
