@@ -11,6 +11,7 @@ import android.util.Log;
 
 /**
  * Created by spark1435 on 10/19/2017.
+ * editted for third commit
  */
 
 public class AllDB {
